@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image'
 
 import Navbar from '../components/Navbar/Navbar'
 
@@ -8,22 +9,22 @@ export default function Courses() {
         {
             title: 'Introduction to Programming',
             description: 'Learn the basics of programming with Python.',
-            image: '/images/course1.jpg',
+            image: '/images/Academic.png',
         },
         {
             title: 'Data Structures and Algorithms',
             description: 'Explore efficient data organization and manipulation.',
-            image: '/images/course2.jpg',
+            image: '/images/Campus.png',
         },
         {
             title: 'Web Development',
             description: 'Build modern web applications using HTML, CSS, and JavaScript.',
-            image: '/images/course3.jpg',
+            image: '/images/Career.png',
         },
         {
             title: 'Machine Learning Basics',
             description: 'Understand the fundamentals of machine learning and its applications.',
-            image: '/images/course4.jpg',
+            image: '/images/Work.svg',
         },
     ];
 
@@ -35,11 +36,6 @@ export default function Courses() {
                     name="description"
                     content="Explore a variety of courses designed to enhance your knowledge and skills."
                 />
-                <link rel="stylesheet" href="/css/normalize.css" />
-                <link rel="stylesheet" href="/css/webflow.css" />
-                <link rel="stylesheet" href="/css/uv-project.webflow.css" />
-                <link rel="shortcut icon" href="/images/favicon.png" />
-                <link rel="apple-touch-icon" href="/images/webclip.png" />
             </Head>
             <Navbar />
             <section>
@@ -55,7 +51,13 @@ export default function Courses() {
                 <div className="w-layout-grid grid">
                     {courses.map((course, index) => (
                         <div key={index} className="w-layout-blockcontainer course-card w-container">
-                            <img src={course.image} alt={course.title} className="course-image" />
+                            <Image
+                                src={course.image}
+                                alt={course.title}
+                                width={320}
+                                height={180}
+                                className="course-image"
+                            />
                             <h4 className="course-title">{course.title}</h4>
                             <p className="course-description">{course.description}</p>
                         </div>

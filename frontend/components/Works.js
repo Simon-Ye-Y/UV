@@ -5,19 +5,19 @@ import Link from 'next/link'
 
 const works = [
   {
-    image: '/images/work1.webp',
+    image: '/images/Campus.png',
     title: 'Course Search',
     details: 'Find and plan your courses easily',
     category: 'Academic'
   },
   {
-    image: '/images/work2.webp',
+    image: '/images/Academic.png',
     title: 'Campus Navigation',
     details: '3D interactive campus map',
     category: 'Navigation'
   },
   {
-    image: '/images/work3.webp',
+    image: '/images/Career.png',
     title: 'Student Forum',
     details: 'Connect with your peers',
     category: 'Community'

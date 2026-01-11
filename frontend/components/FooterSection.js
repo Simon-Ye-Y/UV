@@ -35,7 +35,7 @@ export default function FooterSection() {
             animate={{ opacity: 1, y: 0 }}
             className="cta-wrapper-2"
           >
-            <h2 className="cta-title">Let's Talk</h2>
+            <h2 className="cta-title">Let&apos;s Talk</h2>
             <motion.div
               className="cta-link-wrap-4"
               onMouseMove={handleMouseMove}
@@ -55,7 +55,7 @@ export default function FooterSection() {
             >
               <Link href="#">
                 <div className="cta-arrow"></div>
-                <div className="cta-text">Let's Chat</div>
+                <div className="cta-text">Let&apos;s Chat</div>
               </Link>
             </motion.div>
           </motion.div>

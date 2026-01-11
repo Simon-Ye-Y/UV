@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
+import Image from 'next/image';
 
 export default function AI() {
     const features = [
@@ -33,11 +34,6 @@ export default function AI() {
                     name="description"
                     content="Empowering NYU students with an intelligent assistant designed to streamline academic success."
                 />
-                <link rel="stylesheet" href="/css/normalize.css" />
-                <link rel="stylesheet" href="/css/webflow.css" />
-                <link rel="stylesheet" href="/css/uv-project.webflow.css" />
-                <link rel="shortcut icon" href="/images/favicon.png" />
-                <link rel="apple-touch-icon" href="/images/webclip.png" />
             </Head>
             <Navbar />
             <section>
@@ -49,7 +45,13 @@ export default function AI() {
                         rel="noopener noreferrer"
                         className="link-block-2 w-inline-block"
                     >
-                        <img src="/images/ai_link.png" alt="AI Assistant" />
+                        <Image
+                            src="/images/ai_link.png"
+                            alt="AI Assistant"
+                            width={400}
+                            height={320}
+                            priority
+                        />
                     </a>
                     <h2 className="heading-17">
                         Empowering NYU students with an intelligent assistant designed to streamline academic success,

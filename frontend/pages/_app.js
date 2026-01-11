@@ -1,6 +1,7 @@
 import '../public/css/normalize.css'
 import '../public/css/webflow.css'
 import '../public/css/uv-project.webflow.css'
+import '../public/css/services.css'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 

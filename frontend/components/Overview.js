@@ -40,7 +40,7 @@ export default function Overview() {
             className="overview-top-wrap"
           >
             <Image
-              src="/images/Logo-1.webp"
+              src="/images/Logo-1_1Logo (1).webp"
               alt="Overview Image"
               className="overview-image"
               width={200}

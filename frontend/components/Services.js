@@ -26,13 +26,13 @@ const services = [
     icon: 'https://uploads-ssl.webflow.com/664ad14438ed2d6b390c3f9e/66962fe7c10a34a36ccf7618_dinning.png',
     title: 'Dinning',
     details: 'Updated daily school menus and patronage',
-    link: 'http://uv-project.webflow.io/inner-pages/dining'
+    link: '/dining'
   },
   {
     icon: 'https://uploads-ssl.webflow.com/664ad14438ed2d6b390c3f9e/66962ff2b0cc585972657e09_map.png',
     title: 'Map',
     details: 'Clear school navigation with marked Key building in NYU.',
-    link: 'http://uv-project.webflow.io/inner-pages/mapping'
+    link: '/map'
   },
   {
     icon: 'https://uploads-ssl.webflow.com/664ad14438ed2d6b390c3f9e/6698e1aa86b8fa9393d970ad_%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240718173208.png',
@@ -67,7 +67,7 @@ export default function Services() {
 
           <div className="section-title-wrap services-v1">
             <h2 className="section-title services">Our Educational Services</h2>
-            <Link href="/services" className="secondary-button-wrapper two">
+            <Link href="/courses" className="secondary-button-wrapper two">
               <div className="primary-button-text">All Services</div>
               <div className="primary-button-arrow" />
             </Link>

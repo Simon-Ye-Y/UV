@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check:assets": "node scripts/check-assets.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "gate": "pnpm lint && pnpm build && pnpm check:assets && pnpm check:links"
   },
   "dependencies": {
     "framer-motion": "^10.16.4",

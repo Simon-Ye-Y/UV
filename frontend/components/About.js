@@ -69,7 +69,7 @@ export default function About() {
           >
             <div className="logo-flex-container">
               <div className="about-v1-details logo-text">
-                Our logo is inspired by NYU's emblem, the torch, and we put the letter U upside down 
+                Our logo is inspired by NYU&apos;s emblem, the torch, and we put the letter U upside down 
                 on top of the letter V to make an ice cream style logo, symbolizing that students use 
                 UV to make their study life simple and easy (torch to ice cream).
               </div>

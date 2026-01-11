@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Navbar.module.css';
 import Link from "next/link";
+import Image from 'next/image';
 export default function Navbar() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -26,10 +27,12 @@ export default function Navbar() {
                     <div className="nav-wrapper">
                         {/* Logo */}
                         <Link href="/">
-                            <img
+                            <Image
                                 className={styles.logo1}
                                 src="/images/logo1.png"
                                 alt="Logo"
+                                width={160}
+                                height={60}
                             />
                         </Link>
                         {/* Navigation Menu */}
