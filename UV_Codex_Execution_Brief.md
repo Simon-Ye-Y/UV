@@ -121,6 +121,10 @@ Tasks:
 - Eliminate internal broken links (missing routes or stale `*.webflow.io` links).
 - Confirm `lint` + `build` pass.
 
+Asset policy: 
+- Do not rename assets in P0. 
+- Copy as-is from frontend/uv-project.webflow/ to frontend/public/ to satisfy references. 
+- Optional: generate ASSETS_MANIFEST.md mapping asset → references.
 Acceptance:
 - `pnpm lint` and `pnpm build` pass
 - `check:assets` and `check:links` pass
